@@ -111,14 +111,52 @@
                     <view key="view" contentMode="scaleToFill" id="SDN-KH-G65">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bNv-Hb-UMm">
+                                <rect key="frame" x="117.5" y="265" width="140" height="200"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Moh-fm-O3J">
+                                        <rect key="frame" x="0.0" y="0.0" width="140" height="60"/>
+                                        <state key="normal" title="Søg i madplaner"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J9i-AZ-SsT">
+                                        <rect key="frame" x="0.0" y="70" width="140" height="60"/>
+                                        <state key="normal" title="Lav madplan"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z66-cS-cQU">
+                                        <rect key="frame" x="0.0" y="140" width="140" height="60"/>
+                                        <state key="normal" title="Mine madplaner"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="7xh-eM-hXJ"/>
+                                    <constraint firstAttribute="width" constant="140" id="ZQA-Nw-1qa"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Simply Food" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7AS-09-VKg">
+                                <rect key="frame" x="47.5" y="85" width="280" height="115"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="kNM-je-siS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bNv-Hb-UMm" firstAttribute="top" secondItem="7AS-09-VKg" secondAttribute="bottom" constant="65" id="7jt-yI-lI7"/>
+                            <constraint firstItem="7AS-09-VKg" firstAttribute="centerX" secondItem="SDN-KH-G65" secondAttribute="centerX" id="QFg-k1-Yc9"/>
+                            <constraint firstItem="bNv-Hb-UMm" firstAttribute="centerX" secondItem="SDN-KH-G65" secondAttribute="centerX" id="Qdz-3A-zgJ"/>
+                            <constraint firstItem="7AS-09-VKg" firstAttribute="top" secondItem="vMc-Q7-4Od" secondAttribute="top" constant="65" id="VdA-AS-355"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="vMc-Q7-4Od"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Madplaner" id="yNa-J7-Jpv"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vq6-7x-9j6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3042" y="1236"/>
+            <point key="canvasLocation" x="3040.8000000000002" y="1235.5322338830586"/>
         </scene>
         <!--Menu-->
         <scene sceneID="2GG-XW-k7m">
@@ -127,7 +165,22 @@
                     <view key="view" contentMode="scaleToFill" id="8Lh-za-FEB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Simply Food" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yBp-HE-2Mf">
+                                <rect key="frame" x="47.5" y="85" width="280" height="115"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="agM-NW-IWX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yBp-HE-2Mf" firstAttribute="centerX" secondItem="8Lh-za-FEB" secondAttribute="centerX" id="K85-NC-3sg"/>
+                            <constraint firstItem="yBp-HE-2Mf" firstAttribute="top" secondItem="mTf-UL-yyS" secondAttribute="top" constant="65" id="ocO-tJ-Ywb"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="mTf-UL-yyS"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Menu" id="V1V-I5-OT4"/>
@@ -143,7 +196,22 @@
                     <view key="view" contentMode="scaleToFill" id="9oc-op-Ees">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Simply Food" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V50-kR-cvS">
+                                <rect key="frame" x="47.5" y="85" width="280" height="115"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="KG4-FT-AYL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="V50-kR-cvS" firstAttribute="centerX" secondItem="9oc-op-Ees" secondAttribute="centerX" id="JlA-Je-yWl"/>
+                            <constraint firstItem="V50-kR-cvS" firstAttribute="top" secondItem="nW5-tE-PwQ" secondAttribute="top" constant="65" id="ZKm-iT-Mt2"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="nW5-tE-PwQ"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Instillinger" id="c2Y-fh-B9T"/>
@@ -159,7 +227,39 @@
                     <view key="view" contentMode="scaleToFill" id="qGQ-Ky-BPA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Simply Food" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jnz-7A-Ne4">
+                                <rect key="frame" x="47" y="86" width="281" height="115"/>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="95c-iY-XWP">
+                                <rect key="frame" x="117.5" y="266" width="140" height="160"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EpB-kh-IJQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="140" height="75"/>
+                                        <state key="normal" title="Søg i opskrifter"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="esH-SD-Jmz">
+                                        <rect key="frame" x="0.0" y="85" width="140" height="75"/>
+                                        <state key="normal" title="Lav opskrift"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="1QX-IA-ekc"/>
+                                    <constraint firstAttribute="width" constant="140" id="d8c-B9-EMl"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="95c-iY-XWP" firstAttribute="top" secondItem="jnz-7A-Ne4" secondAttribute="bottom" constant="65" id="AhN-72-4Nk"/>
+                            <constraint firstItem="jnz-7A-Ne4" firstAttribute="leading" secondItem="jer-An-yxD" secondAttribute="leading" constant="47" id="McZ-2Q-jVI"/>
+                            <constraint firstItem="jnz-7A-Ne4" firstAttribute="top" secondItem="jer-An-yxD" secondAttribute="top" constant="66" id="Yjt-4e-UGj"/>
+                            <constraint firstItem="95c-iY-XWP" firstAttribute="centerX" secondItem="qGQ-Ky-BPA" secondAttribute="centerX" id="f5P-fv-hv4"/>
+                            <constraint firstItem="jnz-7A-Ne4" firstAttribute="centerX" secondItem="qGQ-Ky-BPA" secondAttribute="centerX" id="viF-0y-Dlc"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="jer-An-yxD"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Opskrifter" id="xKd-mD-tdw"/>
