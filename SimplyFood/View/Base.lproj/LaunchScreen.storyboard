@@ -23,44 +23,18 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="BHX-f4-PK5">
-                                <rect key="frame" x="97.5" y="273.5" width="180" height="120"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AKG-vD-DUq">
-                                        <rect key="frame" x="0.0" y="0.0" width="180" height="30"/>
-                                        <state key="normal" title="Log in"/>
-                                        <connections>
-                                            <action selector="loginButtonPressed:" destination="VUr-g8-NAP" eventType="touchUpInside" id="w57-e6-jpO"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rax-Z2-Nz4">
-                                        <rect key="frame" x="0.0" y="90" width="180" height="30"/>
-                                        <state key="normal" title="Register"/>
-                                        <connections>
-                                            <action selector="registerButtonPressed:" destination="VUr-g8-NAP" eventType="touchUpInside" id="1vO-L9-tAr"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="180" id="CWz-bP-lNE"/>
-                                    <constraint firstAttribute="height" constant="120" id="GQ5-ME-Tgy"/>
-                                </constraints>
-                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="BHX-f4-PK5" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="1hJ-Pl-deJ"/>
                             <constraint firstItem="oOy-ft-3qZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="65" id="I1v-hr-nFT"/>
                             <constraint firstItem="oOy-ft-3qZ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="TAK-xh-CiW"/>
-                            <constraint firstItem="BHX-f4-PK5" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="n9y-vA-dQg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="VUr-g8-NAP" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+            <point key="canvasLocation" x="68" y="375"/>
         </scene>
     </scenes>
 </document>

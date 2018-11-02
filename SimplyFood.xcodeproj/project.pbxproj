@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E233ECD8218C6458005DF237 /* logInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E233ECD7218C6458005DF237 /* logInController.swift */; };
+		E233ECDA218C646D005DF237 /* registerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E233ECD9218C646D005DF237 /* registerController.swift */; };
+		E233ECDC218C69A7005DF237 /* recipesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E233ECDB218C69A7005DF237 /* recipesController.swift */; };
 		E263033A2178A0D70049AAEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26303392178A0D70049AAEA /* AppDelegate.swift */; };
 		E263033C2178A0D70049AAEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E263033B2178A0D70049AAEA /* ViewController.swift */; };
 		E263033F2178A0D70049AAEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E263033D2178A0D70049AAEA /* Main.storyboard */; };
@@ -15,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E233ECD7218C6458005DF237 /* logInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logInController.swift; sourceTree = "<group>"; };
+		E233ECD9218C646D005DF237 /* registerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerController.swift; sourceTree = "<group>"; };
+		E233ECDB218C69A7005DF237 /* recipesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recipesController.swift; sourceTree = "<group>"; };
 		E26303362178A0D70049AAEA /* SimplyFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimplyFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E26303392178A0D70049AAEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E263033B2178A0D70049AAEA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +83,9 @@
 			children = (
 				E26303392178A0D70049AAEA /* AppDelegate.swift */,
 				E263033B2178A0D70049AAEA /* ViewController.swift */,
+				E233ECD7218C6458005DF237 /* logInController.swift */,
+				E233ECD9218C646D005DF237 /* registerController.swift */,
+				E233ECDB218C69A7005DF237 /* recipesController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -159,6 +168,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E233ECDA218C646D005DF237 /* registerController.swift in Sources */,
+				E233ECDC218C69A7005DF237 /* recipesController.swift in Sources */,
+				E233ECD8218C6458005DF237 /* logInController.swift in Sources */,
 				E263033C2178A0D70049AAEA /* ViewController.swift in Sources */,
 				E263033A2178A0D70049AAEA /* AppDelegate.swift in Sources */,
 			);
