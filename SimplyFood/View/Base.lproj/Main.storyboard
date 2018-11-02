@@ -18,7 +18,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Simply Food" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBn-Bc-bHp">
-                                <rect key="frame" x="67.5" y="85" width="240.5" height="115"/>
+                                <rect key="frame" x="47.5" y="85" width="280" height="115"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="ugc-YY-W2y"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="34"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -229,13 +232,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Simply Food" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jnz-7A-Ne4">
-                                <rect key="frame" x="47" y="86" width="281" height="115"/>
+                                <rect key="frame" x="47.5" y="85" width="280" height="115"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="EMu-vc-XO4"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="34"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="95c-iY-XWP">
-                                <rect key="frame" x="117.5" y="266" width="140" height="160"/>
+                                <rect key="frame" x="117.5" y="265" width="140" height="160"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EpB-kh-IJQ">
                                         <rect key="frame" x="0.0" y="0.0" width="140" height="75"/>
@@ -255,8 +261,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="95c-iY-XWP" firstAttribute="top" secondItem="jnz-7A-Ne4" secondAttribute="bottom" constant="65" id="AhN-72-4Nk"/>
-                            <constraint firstItem="jnz-7A-Ne4" firstAttribute="leading" secondItem="jer-An-yxD" secondAttribute="leading" constant="47" id="McZ-2Q-jVI"/>
-                            <constraint firstItem="jnz-7A-Ne4" firstAttribute="top" secondItem="jer-An-yxD" secondAttribute="top" constant="66" id="Yjt-4e-UGj"/>
+                            <constraint firstItem="jnz-7A-Ne4" firstAttribute="top" secondItem="jer-An-yxD" secondAttribute="top" constant="65" id="Yjt-4e-UGj"/>
                             <constraint firstItem="95c-iY-XWP" firstAttribute="centerX" secondItem="qGQ-Ky-BPA" secondAttribute="centerX" id="f5P-fv-hv4"/>
                             <constraint firstItem="jnz-7A-Ne4" firstAttribute="centerX" secondItem="qGQ-Ky-BPA" secondAttribute="centerX" id="viF-0y-Dlc"/>
                         </constraints>
