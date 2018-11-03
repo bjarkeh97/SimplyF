@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func logInTapped(_ sender: UIButton) {
+        performSegue(withIdentifier: "toMain", sender: self)
     }
     
     @IBAction func registerTapped(_ sender: UIButton) {
