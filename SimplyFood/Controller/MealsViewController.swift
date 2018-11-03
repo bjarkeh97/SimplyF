@@ -10,10 +10,15 @@ import UIKit
 import FirebaseDatabase
 
 class MealsViewController: UITableViewController {
+    
+    let categoriesArray : [String] = ["Favoritter", "Mest populære", "Nye opskrifter", "Hovedretter","Tilbehør"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        // Cell Height
+        self.tableView.rowHeight = 85.0
+        
         var ref: DatabaseReference!
         
         ref = Database.database().reference()
@@ -25,23 +30,21 @@ class MealsViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return categoriesArray.count
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "RecipeCategoryCell", for: indexPath)
 
-        // Configure the cell...
+        cell.textLabel?.text = categoriesArray[indexPath.row]
 
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.
